@@ -2,8 +2,10 @@ name: Daily Dev Log
 
 on:
   schedule:
-    # Runs daily at 14:15 UTC. Change this to your preferred time.
+    # Three legitimate check-ins per day: plan, progress, summary.
     - cron: "15 14 * * *"
+    - cron: "15 19 * * *"
+    - cron: "15 23 * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,7 +23,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Update daily dev log
+      - name: Update daily dev log check-in
         run: python scripts/update_dev_log.py
 
       - name: Commit changes if needed
@@ -33,5 +35,5 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "docs: update daily dev log $(date -u +%F)"
+          git commit -m "docs: update dev log check-in $(date -u +%F-%H%M)"
           git push

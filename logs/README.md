@@ -3,6 +3,7 @@
 Recent daily engineering check-ins.
 
 - [2026 05 24 Morning Plan](2026/05/2026-05-24-morning-plan.md)
+- [2026 05 24 Evening Summary](2026/05/2026-05-24-evening-summary.md)
 - [2026 05 24 Afternoon Progress](2026/05/2026-05-24-afternoon-progress.md)
 - [2026 05 23 Morning Plan](2026/05/2026-05-23-morning-plan.md)
 - [2026 05 23 Evening Summary](2026/05/2026-05-23-evening-summary.md)
